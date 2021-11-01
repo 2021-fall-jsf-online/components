@@ -23,10 +23,14 @@ import { MatInputModule } from '@angular/material/input';
 import { MtbSelectComponent } from './mtb-select/mtb-select.component';
 import { CommonModule } from '@angular/common';
 
+import { JrAdditionComponent } from './jr-addition/jr-addition.component';
+
+
 @NgModule({
   declarations: [
     AppComponent
     , PizzaToppingsComponent
+    , TjsMultiplicationComponent, JrAdditionComponent
     , TjsMultiplicationComponent
     , MtbSelectComponent
     , JacComponentComponent
