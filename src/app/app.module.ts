@@ -10,6 +10,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { SpatelAddDaysComponent } from './spatel-add-days/spatel-add-days.component';
+
 import { MatCheckboxModule, _MatCheckboxRequiredValidatorModule } from '@angular/material/checkbox';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatSelectModule } from '@angular/material/select';
@@ -34,7 +37,8 @@ import { BoredComponent } from './bored/bored.component';
     , JacComponentComponent
     , JvSlackNTellComponent
     , PnFizzBuzzComponent
-    , BoredComponent
+    , BoredComponent,
+    SpatelAddDaysComponent
   ],
   imports: [
     BrowserModule
