@@ -8,6 +8,7 @@ interface PizzaToppingDisplay {
 }
 
 @Component({
+  //  app-pizza-toppings conectado com app.component.html
   selector: 'app-pizza-toppings',
   templateUrl: './pizza-toppings.component.html',
   styleUrls: ['./pizza-toppings.component.css']
@@ -47,6 +48,17 @@ export class PizzaToppingsComponent implements OnInit {
       )
     ;
   }
+ 
+totalPriceTwo = 0;
+
+calculateTotalAgain= () => {
+this.totalPriceTwo = this.availablePizzaToppings
+  .filter(x => x.checked)
+  .reduce(
+    (acc,x) => acc + x.price, 0);
+  
+}
+
 
   checkAll = () => this.availablePizzaToppings = this.availablePizzaToppings.map(
     x => ({
